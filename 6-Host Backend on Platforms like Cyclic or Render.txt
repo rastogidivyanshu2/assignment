@@ -1,0 +1,7 @@
+Since my fullstack project is still in progress it is not yet deployed but i have hosted a couple of frontend projects on hosting platforms like hostinger , here are example of my work 
+
+1)Chater (Chating application)   https://stellular-bublanina-989793.netlify.app/login
+
+2) Fitclub , a gym website with attrative UI :- https://divfitclub.pages.dev/
+
+3) My portfolio website :- https://rastogidivyanshu2.github.io/Portfolio/
