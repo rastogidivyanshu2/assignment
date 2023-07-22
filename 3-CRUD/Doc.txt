@@ -1,0 +1,45 @@
+
+<-----------------------------------------MODELS-------------------------------->
+1)we are creating a two way reference in out property and user schema where 1 user can have more than one property whereas a property can be owner by only a single user 
+
+In user.js 
+const UserSchema = new mongoose.Schema({
+    name:{type :String , required : true},
+    email:{type :String , required : true},
+    avatar:{type :String , required : true},
+    allProperties:[{type:mongoose.Schema.Types.ObjectId , ref: 'Property'}], //user 
+                                                                            can have more than one property
+})
+
+In property.js 
+const PropertySchema = new mongoose.Schema({
+    title:{type:string , required:true} ,
+    description:{type:string , required:true},
+    propertyType:{type:string , required:true},
+    location:{type:string , required:true},
+    price:{type:number , required:true},
+    photo:{type:string , required:true},
+    creator:{type:mongoose.Schema.Types.ObjectId , ref:'User'} //one propertybelong 
+                                                               to one user 
+})
+
+
+
+2) Cloudinary is used to store the image of property
+
+3) make sure to give values to 
+MONGODB_URL
+CLOUDINARY_CLOUD_NAME  
+CLOUDINARY_API_KEY
+CLOUDINARY_API_SECRET 
+
+in .env file
+4)Make sure your current IP address is on your Atlas cluster's IP whitelist
+
+
+5)Make sure to install modules like express , mongoose , cloudinary ,refine  before starting the application 
+
+6) Steps to start 
+ a)in you termimal type "npm install" to install all the dependencies used in the project 
+ b)then start the application by 
+    "nodemon index"

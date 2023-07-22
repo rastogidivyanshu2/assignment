@@ -1,0 +1,9 @@
+Implement secure authentication mechanisms to ensure that API endpoints are accessible only to authenticated users:- 
+Implementing user authentication and authorization in chater chat application using firebase authentication. Firebase firestore stores user information and all the details about the user like user friends list , user chats and also allows easy CRUD functionalities 
+
+1) Make sure to install modules like express firebase   before starting the application
+
+1) Steps to start the application 
+    "npm install" in the terminal to install all the dependencies 
+then , 
+    nodemon index

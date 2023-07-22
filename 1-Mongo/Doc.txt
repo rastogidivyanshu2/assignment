@@ -1,0 +1,14 @@
+1) make sure to give value to  MONGODB_URL in .env file
+
+2) Make sure your current IP address is on your Atlas cluster's IP whitelist
+
+3) Steps to start 
+ a)in you termimal type "npm install" to install all the dependencies used in the project 
+ b) Make sure to install modules like express , mongoose  before starting the application
+
+ c)then start the application by 
+    "nodemon index"
+
+
+4) Open postman and send a post request with a raw json data of name and email to the usl "http://localhost:8080/users/" and click send , your user will be created 
+
