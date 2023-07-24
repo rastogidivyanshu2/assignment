@@ -1,0 +1,91 @@
+Task 1):-
+
+ To create a user in the Database
+
+   route:-  http://localhost:8080/users/  (POST)
+
+   {
+    "name" :"divyanshu",
+    "email":"divyanshu@gmail.com"
+   }
+
+
+
+
+Task 3):- 
+  
+  a) To create a user in the Database
+  
+  route:-  http://localhost:8080/users/  (POST)
+
+   {
+    "name" :"divyanshu",
+    "email":"divyanshu@gmail.com",
+    "avatar":"avatar link posted on any cloud platform like cloudinary",
+    "allProperties":[]
+   }
+
+   b) To Get all the users in the Database
+  
+  route:-  http://localhost:8080/users/  (GET)
+
+   
+   c) To get the info of a user in the Database with the help of id 
+  
+  route:-  http://localhost:8080/users/:id  (GET) 
+
+
+   d) To post a property 
+
+   route:-  http://localhost:8080/properties/  (POST)
+
+   {
+    "Title" :"Ambani house",
+    "description":"Personal flat",
+    "propertyType": "complex",
+    "location": "Mumbai",
+    "price": "60000000",
+    "photo": "Photo link posted on any cloud platform like cloudinary",
+    "creator": { 
+       type: mongoose.Schema.Types.ObjectId,
+       ref: "User" },
+   }
+
+
+    e) To Get all property details 
+
+   route:-  http://localhost:8080/properties/  (GET)
+
+
+
+    f) To get property details by property id
+
+   route:-  http://localhost:8080/properties/:id  (GET)
+
+
+    g) To delete property details by property id
+
+   route:-  http://localhost:8080/properties/:id  (DELETE)
+
+
+
+
+Task 6:-
+
+  Host Backend on Platforms like Cyclic or Render:
+- Deploy and host the backend API on platforms like Cyclic or Render.
+- Ensure that the API is accessible and operational on the hosting platform.
+
+Routes:-
+
+1) To get a static response ----> {"title":"Books"}
+
+route :- "https://cute-erin-stingray-vest.cyclic.app/" (GET)
+
+2) To add Books mentined in index file under get request , titles :- "Sons Of Anarchy" and "Game of Thrones"
+
+route:- "https://cute-erin-stingray-vest.cyclic.app/add-note" (GET)
+
+3) To display all the Books Stored in the database
+
+route:- "https://cute-erin-stingray-vest.cyclic.app/books" (GET)
