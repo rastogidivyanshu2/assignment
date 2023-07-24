@@ -1,13 +1,13 @@
 Routes:-
 
-To get a static response ----> {"title":"Books"}
+1) To get a static response ----> {"title":"Books"}
 
 route :- "https://cute-erin-stingray-vest.cyclic.app/" (GET)
 
-To add Books mentined in index file under get request , titles :- "Sons Of Anarchy" and "Game of Thrones"
+2) To add Books mentined in index file under get request , titles :- "Sons Of Anarchy" and "Game of Thrones"
 
 route:- "https://cute-erin-stingray-vest.cyclic.app/add-note" (GET)
 
-To display all the Books Stored in the database
+3) To display all the Books Stored in the database
 
 route:- "https://cute-erin-stingray-vest.cyclic.app/books" (GET)
